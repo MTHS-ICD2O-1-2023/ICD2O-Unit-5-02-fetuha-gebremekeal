@@ -29,16 +29,16 @@
         <img src="./images/positive_negative.jpg" alt="Positive and negative image" />
       </div>
       <br />
-      <div class="page-content">Pick an integer between 1 and 6.</div>
+      <div class="page-content">Select Positive or Negative</div>
       <form action="#">
-        <div class="mdl-textfield mdl-js-textfield">
-          <!-- input pattern attribute -->
-          <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="integer" />
-          <!-- mdl-textfield__label -->
-          <label class="mdl-textfield__label" for="integer">Integer</label>
-          <!-- class "mdl-textfield__error" -->
-          <span class="mdl-textfield__error">Input is not a number.</span>
-        </div>
+        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
+          <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
+          <span class="mdl-radio__label">First</span>
+        </label>
+        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-2">
+          <input type="radio" id="option-2" class="mdl-radio__button" name="options" value="2">
+          <span class="mdl-radio__label">Second</span>
+        </label>
         <br />
         <!-- Accent-colored raised button with ripple -->
         <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
